@@ -32,7 +32,7 @@ const Inputs = (props) => {
   }
 
   return (
-    <div>
+    <div className='form-container'>
         <form action="" className='input-form'>
           {isExpanded && (
             <input type="text" placeholder="Title" onChange={handleChange} name='title' value={note.title} />

@@ -6,12 +6,15 @@
 
 html {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 body {
   background: #F2EFE7;
   background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
   padding: 0 16px;
+  min-height: 100vh;
+  position: relative;
 }
 
 header {
@@ -25,11 +28,20 @@ header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .input-form {
   position: relative;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
@@ -77,6 +89,7 @@ header h1 {
   box-shadow: 0 1px 5px rgb(138, 137, 137);
   float: left;
   margin: 26px;
+  break-inside: avoid;
 }
 .note h1 {
   font-size: 1.5em;
@@ -92,10 +105,11 @@ header h1 {
   border: none;
   width: 20%;
   align-self: flex-end;
-  padding: 5px 10px;
+  padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
+  width: auto;
 }
 .note button:hover {
   background: #1E5F74;
@@ -104,11 +118,57 @@ header h1 {
 footer {
   position: absolute;
   text-align: center;
-  bottom: 0;
   width: 100%;
   height: 2.5rem;
+  margin-top: auto;
 }
 
 footer p {
   color: #a8a8a8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    padding: 0 8px;
+  }
+
+  header {
+    padding: 12px 16px;
+    margin: auto;
+  }
+
+  .note-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .input-form {
+    margin: 20px auto;
+  }
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: -20px;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .input-form button {
+    right: 10px;
+    bottom: -15px;
+  }
+
+  .note button {
+    width: 100%; /* Full width button on mobile */
+  }
 }

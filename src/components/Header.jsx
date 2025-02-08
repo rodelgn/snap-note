@@ -3,11 +3,11 @@ import '../index.css'
 
 const Header = () => {
   return (
-    <header>
     <div>
+       <header>
         <h1>Snap Note</h1>
+        </header>
     </div>
-    </header>
   )
 }
 
