@@ -100,3 +100,15 @@ header h1 {
 .note button:hover {
   background: #1E5F74;
 }
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #a8a8a8;
+}

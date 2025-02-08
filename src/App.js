@@ -3,6 +3,7 @@ import './index.css'
 import Header from './components/Header';
 import Inputs from './components/Inputs';
 import Note from './components/Note';
+import Footer from './components/Footer';
 
 function App() {
   const [notes, setNotes] = useState([])
@@ -31,6 +32,7 @@ function App() {
         onDelete={deleteNotes}/>
       }
       )}
+      <Footer />
       
     </div>
   );
