@@ -33,12 +33,21 @@ const Inputs = (props) => {
 
   return (
     <div className='form-container'>
+      
         <form action="" className='input-form'>
           {isExpanded && (
             <input type="text" placeholder="Title" onChange={handleChange} name='title' value={note.title} />
             )}
         <textarea placeholder="Write a Note" onClick={expand} rows={isExpanded ? 3: 1} onChange={handleChange} name='content' value={note.content} />
         <button onClick={handleClick}>Save</button>
+
+        <div>
+          <ul className='textFormatting'>
+            <li style={{ fontWeight: 'bold' }}>B</li>
+            <li style={{ fontStyle: 'italic', fontFamily: 'serif' }}>I</li>
+            <li>U</li>
+          </ul>
+        </div>
         </form>
     </div>
   )
