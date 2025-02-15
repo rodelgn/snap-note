@@ -40,14 +40,6 @@ const Inputs = (props) => {
             )}
         <textarea placeholder="Write a Note" onClick={expand} rows={isExpanded ? 3: 1} onChange={handleChange} name='content' value={note.content} />
         <button onClick={handleClick}>Save</button>
-
-        <div>
-          <ul className='textFormatting'>
-            <li style={{ fontWeight: 'bold' }}>B</li>
-            <li style={{ fontStyle: 'italic', fontFamily: 'serif' }}>I</li>
-            <li>U</li>
-          </ul>
-        </div>
         </form>
     </div>
   )

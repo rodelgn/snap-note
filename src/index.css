@@ -76,22 +76,6 @@ header h1 {
 .input-form button:hover {
   background: #1E5F74;
 }
-.textFormatting {
-  display: flex;
-  justify-content: flex-start;
-  gap: 5px;
-  list-style: none;
-  align-items: center;
-  margin-top: 10px;
-}
-.textFormatting li {
-  cursor: pointer;
-  font-size: 1.2em;
-  color: #2973B2;
-  padding: 5px 10px;
-  box-shadow: #1E5F74 0 0 5px;
-  border-radius: 8px;
-}
 
 .note {
   display: flex;
